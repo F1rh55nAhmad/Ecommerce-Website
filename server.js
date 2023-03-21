@@ -8,6 +8,8 @@ const routes = require('./routers/router');
 app.listen(3002,()=>{
     console.log('Server started on port 3002'); // this is comment from farheen
     console.log('Server started on port 3002'); // this is comment from farheen
+    console.log('Server started on port 3002'); // this is comment from Zara
+    console.log('Server started on port 3002'); // this is comment from Zara
 });
 
 
