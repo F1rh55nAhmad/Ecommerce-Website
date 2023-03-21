@@ -7,13 +7,16 @@ const app = express();
 const routes = require('./routers/router');
 require('./models');
 var userctrl = require('./controllers/usercontrollers');
+var cartctrl = require('./controllers/cartcontrollers');
 
 app.use('/', routes)
 
 app.get("/add", userctrl.addUser);
-app.get("/crud", userctrl.crudOperation);
+app.get("/crud", userctrl.CrudOperation);
 
-
+app.get("/getall", cartctrl.getAllProducts);
+app.get("getone", cartctrl.getOneProduct);
+app.get("delete", cartctrl.deleteProduct);
 
  
 

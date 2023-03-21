@@ -21,7 +21,16 @@ var addUser = async (req, resp)=>{
     data.name = 'dummy';
     data.reload();  //data.save();
 
-    var crudOperation = async(req , resp)=>{
+    let response = {
+        data: 'ok'
+    }
+
+resp.status(200).json(response);
+
+}
+
+
+    var CrudOperation = async(req , resp)=>{
 
         // insert
         let data1 = await Users.create({first_name:'demo',last_name:'demo1',email:'demo14@gmail.com',gender:'female'});
@@ -47,10 +56,11 @@ var addUser = async (req, resp)=>{
         let response = {
             data: 'ok'
         }
-    }
+    
     resp.status(200).json(response);
 }
 
 module.exports = {
-    addUser
+    addUser,
+    CrudOperation
 }

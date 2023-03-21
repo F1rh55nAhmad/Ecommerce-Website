@@ -5,7 +5,7 @@ const sequelize = new Sequelize('test' , 'root' , '1234' , {
     dialect : 'mysql'
 });
 
-Sequelize.authenticate()
+sequelize.authenticate()
 .then(() => {
     console.log('Connection has been Established!');
 })
@@ -17,11 +17,11 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize ;
 
-db.users = require('./users.model.js')(sequelize,DataTypes);
+db.users = require('./usermodel.js')(sequelize,DataTypes);
 
-db.sequelize.sync({force : true})
+db.sequelize.sync({force : false})
 .then(()=>{
     console.log("YES!, it is re-synced!");
 })
-db.users = require('./users')(sequelize,DataTypes);
+db.users = require('./usermodel.js')(sequelize,DataTypes);
 module.exports = db;

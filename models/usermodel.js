@@ -10,9 +10,7 @@ module.exports = (sequelize,DataTypes)=>{
             type:DataTypes.STRING
         }
     },{
-        tableName : 'userdata',
-        createdAt:'create_at',
-        updateAt:'modified_at',
-    });
+        tableName : 'userdata'
+});
     return Users;
 }
