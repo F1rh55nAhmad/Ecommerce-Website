@@ -15,8 +15,8 @@ app.get("/add", userctrl.addUser);
 app.get("/crud", userctrl.CrudOperation);
 
 app.get("/getall", cartctrl.getAllProducts);
-app.get("getone", cartctrl.getOneProduct);
-app.get("delete", cartctrl.deleteProduct);
+app.get("/getone", cartctrl.getOneProduct);
+app.get("/delete", cartctrl.deleteProduct);
 
  
 
