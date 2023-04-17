@@ -1,7 +1,7 @@
 **Shoes Website Documentation**
 This documentation provides information on the setup, usage, and maintenance of the Shoes Website project hosted on GitHub.
 
-                          **WEBSITE NAME :   Kicks Kingdom**
+                          **WEBSITE NAME :   Kicks **
                           
 **Table of Contents**
 Introduction
